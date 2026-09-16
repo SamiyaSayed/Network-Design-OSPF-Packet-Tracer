@@ -1,12 +1,10 @@
 # Network Design and OSPF Routing Simulation
 
-## Project Overview
+## 📌 Project Overview
 
-This project demonstrates a multi-router network designed and simulated using Cisco Packet Tracer. The network connects a Head Office and Branch Office through a Core network using OSPF dynamic routing.
+Designed and simulated a multi-router network using Cisco Packet Tracer. Connected a Head Office and Branch Office through a Core Router and configured OSPF dynamic routing for communication between networks.
 
-## Network Topology
-
-The network consists of:
+## 🖥️ Network Topology
 
 - 3 Routers
 - 2 Switches
@@ -14,39 +12,46 @@ The network consists of:
 - IPv4 addressing
 - OSPF dynamic routing
 
-## IP Addressing
+![Network Topology](Screenshots/01-topology.png)
+
+## 🌐 IP Addressing
 
 | Device | IP Address |
 |---|---|
 | PC0 | 192.168.1.10 |
-| HQ Router LAN | 192.168.1.1 |
-| HQ Router – Core Router | 10.0.0.1 / 10.0.0.2 |
-| Core Router – Branch Router | 10.0.0.5 / 10.0.0.6 |
-| Branch Router LAN | 192.168.3.1 |
+| HQ Router | 192.168.1.1 |
+| R1–R2 | 10.0.0.1 / 10.0.0.2 |
+| R2–R3 | 10.0.0.5 / 10.0.0.6 |
+| Branch Router | 192.168.3.1 |
 | PC1 | 192.168.3.10 |
 
-## Technologies Used
+## ⚙️ Technologies
 
-- Cisco Packet Tracer
-- IPv4
-- Subnetting
-- OSPF
-- Routing and Switching
-- Network Troubleshooting
-
-## Verification
-
-The network was tested using:
+Cisco Packet Tracer • IPv4 • Subnetting • OSPF • Routing & Switching • Network Troubleshooting
+## 🧪 Verification
 
 - OSPF neighbor verification
 - Routing table verification
 - PC-to-PC Ping testing
 - Packet flow analysis using Simulation Mode
 
-## Result
+`show ip ospf neighbor`
+`show ip route`
+`ping 192.168.3.10`
 
-Successful communication was established between the Head Office and Branch Office networks using OSPF dynamic routing.
+## 🛠️ Troubleshooting
 
-## Screenshot
+Tested a wrong default gateway on PC0, identified the issue, and restored the correct gateway 192.168.1.1.
 
-The topology screenshot below shows the complete network design and device connections.
+## 📡 Packet Flow
+
+Observed packet movement from PC0 to PC1 using Simple PDU in Simulation Mode.
+
+## 🎯 Learning Outcomes
+
+- Network design
+- IPv4 addressing and subnetting
+- OSPF dynamic routing
+- Routing and switching
+- Network troubleshooting
+- Cisco Packet Tracer simulation
